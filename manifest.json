@@ -1,0 +1,21 @@
+{
+
+  "name": "Disable Reddit's Next Button",
+  "version": "1.1",
+  "manifest_version": 2,
+  "description": "Time is the most important commodity. Take control.",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "permissions": [
+  ],
+
+  "content_scripts": [
+   {
+    "matches": ["http://www.reddit.com/*", "http://*.reddit.com/*"],
+    "css": ["mystyles.css"]
+   }
+  ]
+
+}
